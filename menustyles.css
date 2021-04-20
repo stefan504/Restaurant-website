@@ -1,0 +1,81 @@
+body {
+	background-color: rgb(34, 34, 34);
+}
+.landing-page {
+	background-image: url(img/landing-menu.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 90vh;
+	clip-path: polygon(
+		0% 0%,
+		100% 0%,
+		100% 75%,
+		100% 80%,
+		67% 85%,
+		100% 78%,
+		0 100%
+	);
+}
+
+.dotted {
+	border-bottom: 3px rgb(233, 233, 233) dotted;
+}
+.menu {
+	position: relative;
+	top: -90px;
+}
+
+.menu-container1 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 0 13%;
+}
+
+.menu-card {
+	padding: 1.5rem 2rem 1.5rem 2rem;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.menu-card h1 {
+	font-size: 36px;
+	color: rgba(255, 217, 0, 0.979);
+}
+
+.menu-card h4 {
+	padding: 15px 0;
+	color: #fff;
+	font-size: 24px;
+}
+
+.menu-card p {
+	color: rgba(224, 224, 224, 0.6);
+}
+
+.price-holder {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.price {
+	font-style: italic;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 1220px) {
+	.menu-container1 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin: 0 6%;
+	}
+}
+
+@media (max-width: 1000px) {
+	.menu-container1 {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		margin: 0 13%;
+	}
+}
