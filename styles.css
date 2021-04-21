@@ -164,7 +164,7 @@ body {
 .card-content {
 	background-color: transparent;
 	border-radius: 20px;
-	
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -299,7 +299,7 @@ body {
 
 .client-cards {
 	display: flex;
-	padding:3rem 0;
+	padding: 3rem 0;
 }
 .client-card {
 	padding: 4rem 1.2rem;
@@ -568,4 +568,195 @@ body {
 	color: #fffc00;
 }
 .social-media .fa-twitter:hover {
-	color: #00acee
+	color: #00acee;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 900px) {
+	.our-story {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		padding: 12% 5%;
+	}
+	.img-holder {
+		max-height: 25rem;
+		display: flex;
+		justify-content: center;
+	}
+	.img-holder img {
+		object-fit: cover;
+		object-position: center;
+		height: 100%;
+		width: 90%;
+	}
+	.text-holder {
+		width: 100%;
+	}
+
+	.btn2 {
+		display: none;
+	}
+
+	/* SHOWCASE */
+
+	.showcase {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		color: #fff;
+	}
+	.card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		padding: 6rem;
+	}
+	.card-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		height: 60%;
+
+		padding: 0 1rem;
+		background-color: transparent;
+		border-radius: 20px;
+		text-align: center;
+		box-shadow: 20px 20px 50px rgba(32, 32, 32, 0.2);
+	}
+	.card-content h1 {
+		font-size: 26px;
+		padding-bottom: 1.5rem;
+	}
+	.card-content p {
+		font-size: 1.1rem;
+		padding: 0.3rem;
+	}
+
+	/* MENU FEATURES */
+
+	.menu-features {
+		background-color: black;
+		color: #fff;
+		padding: 3rem 5%;
+	}
+	.menu-features h1 {
+		color: rgba(255, 217, 0, 0.979);
+		text-align: center;
+		font-size: 36px;
+	}
+	.menu-features h3 {
+		margin-top: 20px;
+		text-align: center;
+		padding-bottom: 2rem;
+		font-size: 1.3rem;
+	}
+	.menu-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.menu-cards {
+		display: flex;
+		flex-direction: column;
+	}
+	.menu-card {
+		padding: 1rem 1rem 4rem 1rem;
+	}
+	/* CLIENTS SECTION */
+
+	.client-features {
+		padding: 3rem 5%;
+	}
+
+	.client-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.client-cards {
+		display: flex;
+		flex-direction: column;
+		padding: 3rem 0;
+	}
+	.client-card {
+		padding: 4rem 1.2rem;
+		margin: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		border-radius: 10px;
+	}
+	.client-card-1 {
+		background-image: url(img/client1.jpg);
+
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.client-card-2 {
+		background-image: url(img/client2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.client-card-3 {
+		background-image: url(img/client3.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.client-card p {
+		font-style: italic;
+		font-size: 19px;
+		color: rgb(255, 255, 255);
+	}
+	.client-card i {
+		text-align: center;
+		color: rgb(246, 246, 246);
+	}
+	.client-card > * {
+		padding-bottom: 20px;
+	}
+	.btn4 {
+		background-color: rgba(255, 217, 0, 0.979);
+		text-decoration: none;
+		color: black;
+
+		text-align: center;
+		padding: 10px 15px;
+		font-weight: 600;
+		font-size: 32px;
+	}
+
+	/* GALLERY */
+
+	.gallery-container {
+		max-width: 114rem;
+		width: 95%;
+		margin: auto;
+		display: grid;
+		grid-template-areas:
+			'i1 i1'
+			'i1 i1'
+			'i2 i3'
+			'i4 i4'
+			'i4 i4'
+			'i5 i6';
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 10rem 10rem 15rem 10rem 10rem 15rem;
+	}
+}
