@@ -572,8 +572,24 @@ body {
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 413px) {
+	.landing-text h3 {
+		font-size: 53px;
+	}
+}
+@media (max-width: 290px) {
+	.landing-text h3 {
+		font-size: 43px;
+	}
+	.lading-text p {
+		font-size: 1rem;
+	}
+}
 
 @media (max-width: 900px) {
+	.nav-bar-container {
+		padding-top: 1.2rem;
+	}
 	.our-story {
 		display: flex;
 		flex-direction: column;
